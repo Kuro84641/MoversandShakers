@@ -79,7 +79,7 @@ public class PlayerLocomotion : MonoBehaviour
             moveDirection = new Vector3(move.x, 0f, move.y);
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
-            if (jumpAction.triggered)
+            if (jumpAction.IsPressed())
             {
                 moveDirection.y = jumpSpeed;
             }

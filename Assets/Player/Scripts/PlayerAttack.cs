@@ -36,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
             cameraTransform = Camera.main.transform;
             Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
             RaycastHit raycastHit;
-
+            Debug.DrawRay(cameraTransform.position, cameraTransform.forward * 4, Color.blueViolet, 1f);
             if (Physics.Raycast(ray, out raycastHit, range))
             {
                 if (raycastHit.transform != null)

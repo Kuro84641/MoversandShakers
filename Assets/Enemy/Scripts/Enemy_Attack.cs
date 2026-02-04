@@ -61,6 +61,7 @@ public class EnemyAttack : MonoBehaviour
                 tick = 0f;
                 Ray ray = new Ray(gunTransform.position, gunTransform.forward);
                 RaycastHit raycastHit;
+                Debug.DrawRay(gunTransform.position, gunTransform.forward * 3, Color.aliceBlue, 1f);
 
                 if (Physics.Raycast(ray, out raycastHit, maxDistanceToTarget))
                 {

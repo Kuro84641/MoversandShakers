@@ -73,12 +73,16 @@ public class PlayerLocomotion : MonoBehaviour
 
     void Locomotion()
     {
+        
+        
+
         if (characterController.isGrounded) // When grounded, set y-axis to zero (to ignore it)
         {
             Vector2 move = moveAction.ReadValue<Vector2>();
             moveDirection = new Vector3(move.x, 0f, move.y);
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
+           
             if (jumpAction.IsPressed())
             {
                 moveDirection.y = jumpSpeed;

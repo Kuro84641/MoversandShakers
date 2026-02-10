@@ -1330,7 +1330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3756384121749401005, guid: 2ed2b30b545ff504eaa8be529d29608b, type: 3}
       propertyPath: gravity
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3756384121749401005, guid: 2ed2b30b545ff504eaa8be529d29608b, type: 3}
       propertyPath: jumpSpeed
@@ -1339,6 +1339,18 @@ PrefabInstance:
     - target: {fileID: 4206420760941353390, guid: 2ed2b30b545ff504eaa8be529d29608b, type: 3}
       propertyPath: m_TagString
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269717986186267106, guid: 2ed2b30b545ff504eaa8be529d29608b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269717986186267106, guid: 2ed2b30b545ff504eaa8be529d29608b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269717986186267106, guid: 2ed2b30b545ff504eaa8be529d29608b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

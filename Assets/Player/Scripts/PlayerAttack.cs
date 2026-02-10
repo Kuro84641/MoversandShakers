@@ -33,6 +33,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (attackAction.triggered)
         {
+            LayerMask mask = ~LayerMask.GetMask("Player");
             cameraTransform = Camera.main.transform;
             Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
             RaycastHit raycastHit;

@@ -108,8 +108,8 @@ public class PlayerLocomotion : MonoBehaviour
     {
         Vector2 look = lookAction.ReadValue<Vector2>();
 
-        rotateX = look.x * mouseSensitivity;
-        rotateY -= look.y * mouseSensitivity;
+        rotateX = look.x * mouseSensitivity * Time.deltaTime;
+        rotateY -= look.y * mouseSensitivity * Time.deltaTime;
 
         rotateY = Mathf.Clamp(rotateY, lookUpClamp, lookDownClamp);
 

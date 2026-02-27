@@ -38,7 +38,7 @@ public class PlayerAttack : MonoBehaviour
             Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
             RaycastHit raycastHit;
             
-            Debug.DrawRay(cameraTransform.position, cameraTransform.forward * 4, Color.blueViolet, 1f);
+            Debug.DrawRay(cameraTransform.position, cameraTransform.forward * 100, Color.blueViolet, 1f);
            
             
             

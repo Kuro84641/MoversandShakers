@@ -25,6 +25,7 @@ public class PlayerLocomotion : MonoBehaviour
     InputAction crouchAction;
     InputAction lookAction;
     InputAction previousAction;
+  
 
     void OnEnable()
     {
@@ -51,8 +52,9 @@ public class PlayerLocomotion : MonoBehaviour
     {
         Locomotion();
         RotateAndLook();
-
         PerspectiveCheck();
+
+    
     }
 
     void SetCurrentCamera()
